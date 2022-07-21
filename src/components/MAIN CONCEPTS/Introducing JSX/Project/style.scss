@@ -1,0 +1,274 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+// :root {
+//     --fg: #17181c;
+//     --shade1: #727274;
+//     --shade2: #cccdd1;
+//     --shade3: #f3f4f8;
+//     --shade4: #ffffff;
+//     --dur1: 1s;
+//     --dur2: 6s;
+//     font-size: calc(16px + (32 - 16)*(100vw - 320px)/(2560 - 320));
+// }
+
+// @media (prefers-color-scheme: dark) {
+//     :root {
+//         --fg: #e3e4e8;
+//         --shade1: #23252a;
+//         --shade2: #3e424c;
+//         --shade3: #4a4e5a;
+//         --shade4: #686e7e;
+//     }
+// }
+
+::-webkit-scrollbar {
+    width: 8px;
+    background-color: #327ba8;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 20px;
+    background-color: rgb(1, 1, 1);
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+
+.container-fluid {
+    min-height: 100vh;
+
+    nav {
+        min-height: 10vh;
+        background: #000000;
+        display: flex;
+        color: #FFF;
+
+        .nav-logo {
+            width: 40%;
+            height: 100%;
+            display: flex;
+
+            h1 {
+                font-family: 'Jost';
+                font-style: normal;
+                font-weight: 600;
+                font-size: 64px;
+                line-height: 92px;
+                padding-left: 20px;
+                display: flex;
+            }
+        }
+
+        .nav-menu {
+            width: 50%;
+            height: 100%;
+            display: flex;
+
+            ul {
+                column-gap: 30px;
+
+                li {
+                    position: relative;
+                    transition: all .5s linear;
+                    -webkit-transition: all .5s linear;
+                    -moz-transition: all .5s linear;
+                    -ms-transition: all .5s linear;
+                    -o-transition: all .5s linear;
+
+                    a {
+                        font-family: 'Jost';
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 35px;
+                        line-height: 51px;
+                        display: flex;
+                        align-items: center;
+                    }
+
+                    &::before {
+                        position: absolute;
+                        content: '';
+                        width: 0;
+                        height: 2px;
+                        transition: all .5s linear;
+                        background-color: #fff;
+                        top: 100%;
+                        left: 0;
+                    }
+
+                    &:hover::before {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+
+        .nav-bar {
+            width: 10%;
+            height: 100%;
+
+            .icon {
+                cursor: pointer;
+                display: none;
+
+                font: {
+                    size: 35px;
+                }
+            }
+        }
+    }
+
+    header {
+        min-height: 84vh;
+        display: flex;
+        background: #31576f;
+
+        .left {
+            min-height: 84vh;
+            padding-left: 30px;
+            background: url(./image/1.png) no-repeat center;
+            background-size: cover;
+
+            h1 {
+                font-family: 'Jost';
+                font-style: normal;
+                font-weight: 600;
+                padding-top: 50px;
+                font-size: 120px;
+                line-height: 101%;
+                display: flex;
+                align-items: center;
+                color: #FFFFFF;
+            }
+
+            p {
+                font-family: 'Jost';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 32px;
+                line-height: 101%;
+                display: flex;
+                padding-right: 100px;
+                margin: 40px 0;
+                align-items: center;
+                color: #FFFFFF;
+            }
+
+            a {
+                width: 246px;
+                height: 66px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-family: 'Jost';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 32px;
+                line-height: 101%;
+                display: flex;
+                text-decoration: none;
+                align-items: center;
+                color: #000000;
+                background: #FFFFFF;
+                border-radius: 40px;
+
+                &:hover {
+                    box-shadow: 0 0 10px 1px #fff;
+                }
+            }
+        }
+
+        .right {
+            min-height: 84vh;
+
+            img {
+                margin-top: 100px;
+                width: 600px;
+            }
+        }
+    }
+
+    @media screen and ( max-width: 1200px ) {
+        nav {
+            .nav-logo {
+                h1 {
+                    font-size: 40px;
+                }
+            }
+
+            .nav-menu li a {
+                font-size: 24px !important;
+            }
+        }
+
+        header {
+            .left {
+                background-position-x: -50px;
+                h1 {
+                    font-size: 50px;
+                }
+
+                p {
+                    padding: 0 50px 0 0;
+                }
+            }
+
+            .right {
+                img {
+                    margin-top: 100px;
+                    width: 450px;
+                }
+            }
+        }
+    }
+
+    @media (max-width: 991.9px) {
+        .container-fluid {
+            overflow: scroll !important;
+        }
+
+        nav {
+            .nav-menu {
+                ul {
+                    display: none !important;
+                }
+            }
+
+            .nav-bar {
+                .icon {
+                    display: block;
+                }
+            }
+        }
+
+        header {
+
+            .left,
+            .rigth {
+                width: 100% !important;
+            }
+
+            .left {
+                background-size: 100%;
+                background-position-x: 0;
+                h1 {
+                    font-size: 50px;
+                }
+
+                p {
+                    padding-right: 150px;
+                }
+
+                a {
+                    width: 150px;
+                    height: 30px;
+                    font-size: 20px;
+                }
+            }
+
+            .right {
+                display: none;
+            }
+        }
+    }
+}

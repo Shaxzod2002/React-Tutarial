@@ -1,0 +1,201 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+::-webkit-scrollbar {
+  width: 8px;
+  background-color: #327ba8;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 20px;
+  background-color: rgb(1, 1, 1);
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+
+.container-fluid {
+  min-height: 100vh;
+}
+.container-fluid nav {
+  min-height: 10vh;
+  background: #000000;
+  display: flex;
+  color: #FFF;
+}
+.container-fluid nav .nav-logo {
+  width: 40%;
+  height: 100%;
+  display: flex;
+}
+.container-fluid nav .nav-logo h1 {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 64px;
+  line-height: 92px;
+  padding-left: 20px;
+  display: flex;
+}
+.container-fluid nav .nav-menu {
+  width: 50%;
+  height: 100%;
+  display: flex;
+}
+.container-fluid nav .nav-menu ul {
+  column-gap: 30px;
+}
+.container-fluid nav .nav-menu ul li {
+  position: relative;
+  transition: all 0.5s linear;
+  -webkit-transition: all 0.5s linear;
+  -moz-transition: all 0.5s linear;
+  -ms-transition: all 0.5s linear;
+  -o-transition: all 0.5s linear;
+}
+.container-fluid nav .nav-menu ul li a {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 35px;
+  line-height: 51px;
+  display: flex;
+  align-items: center;
+}
+.container-fluid nav .nav-menu ul li::before {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 2px;
+  transition: all 0.5s linear;
+  background-color: #fff;
+  top: 100%;
+  left: 0;
+}
+.container-fluid nav .nav-menu ul li:hover::before {
+  width: 100%;
+}
+.container-fluid nav .nav-bar {
+  width: 10%;
+  height: 100%;
+}
+.container-fluid nav .nav-bar .icon {
+  cursor: pointer;
+  display: none;
+  font-size: 35px;
+}
+.container-fluid header {
+  min-height: 84vh;
+  display: flex;
+  background: #31576f;
+}
+.container-fluid header .left {
+  min-height: 84vh;
+  padding-left: 30px;
+  background: url(./image/1.png) no-repeat center;
+  background-size: cover;
+}
+.container-fluid header .left h1 {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 600;
+  padding-top: 50px;
+  font-size: 120px;
+  line-height: 101%;
+  display: flex;
+  align-items: center;
+  color: #FFFFFF;
+}
+.container-fluid header .left p {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 101%;
+  display: flex;
+  padding-right: 100px;
+  margin: 40px 0;
+  align-items: center;
+  color: #FFFFFF;
+}
+.container-fluid header .left a {
+  width: 246px;
+  height: 66px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 101%;
+  display: flex;
+  text-decoration: none;
+  align-items: center;
+  color: #000000;
+  background: #FFFFFF;
+  border-radius: 40px;
+}
+.container-fluid header .left a:hover {
+  box-shadow: 0 0 10px 1px #fff;
+}
+.container-fluid header .right {
+  min-height: 84vh;
+}
+.container-fluid header .right img {
+  margin-top: 100px;
+  width: 600px;
+}
+@media screen and (max-width: 1200px) {
+  .container-fluid nav .nav-logo h1 {
+    font-size: 40px;
+  }
+  .container-fluid nav .nav-menu li a {
+    font-size: 24px !important;
+  }
+  .container-fluid header .left {
+    background-position-x: -50px;
+  }
+  .container-fluid header .left h1 {
+    font-size: 50px;
+  }
+  .container-fluid header .left p {
+    padding: 0 50px 0 0;
+  }
+  .container-fluid header .right img {
+    margin-top: 100px;
+    width: 450px;
+  }
+}
+@media (max-width: 991.9px) {
+  .container-fluid .container-fluid {
+    overflow: scroll !important;
+  }
+  .container-fluid nav .nav-menu ul {
+    display: none !important;
+  }
+  .container-fluid nav .nav-bar .icon {
+    display: block;
+  }
+  .container-fluid header .left,
+.container-fluid header .rigth {
+    width: 100% !important;
+  }
+  .container-fluid header .left {
+    background-size: 100%;
+    background-position-x: 0;
+  }
+  .container-fluid header .left h1 {
+    font-size: 50px;
+  }
+  .container-fluid header .left p {
+    padding-right: 150px;
+  }
+  .container-fluid header .left a {
+    width: 150px;
+    height: 30px;
+    font-size: 20px;
+  }
+  .container-fluid header .right {
+    display: none;
+  }
+}/*# sourceMappingURL=style.css.map */

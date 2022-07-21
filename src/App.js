@@ -1,5 +1,6 @@
 import './App.css';
 import Components from './components';
+import 'bootstrap/dist/css/bootstrap.css';
 
 function App() {
   return (
