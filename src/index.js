@@ -3,11 +3,16 @@ import ReactDOM from 'react-dom/client';
 import App from './App';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-)
+function timeFunction() {
+  root.render(
+    <React.StrictMode>
+      <App />
+    </React.StrictMode>
+  )
+}
+
+setInterval(timeFunction, 1000);
+
 // const hello = <h1>Hello World</h1>
 
 // vaqt oralig'ida jarayon hosil qilish.
