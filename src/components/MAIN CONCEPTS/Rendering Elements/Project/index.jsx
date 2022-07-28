@@ -2,6 +2,7 @@ import React from 'react'
 import './style.css'
 import { AiFillGithub } from 'react-icons/ai'
 import { MdDarkMode } from 'react-icons/md'
+
 export default function Project() {
     const h1 = <h1>Timer</h1>
     return (
@@ -30,7 +31,7 @@ export default function Project() {
                         <p className='text-capitalize'>minutes</p>
                     </div>
                     <div className="seconds w-25 h-25  d-flex justify-content-center align-items-center flex-column">
-                        <h1 className='w-75 text-center border border-1 border-dark rounded rounded-2'>{new Date().getSeconds()}</h1>
+                        <h1 className='w-75 text-center border border-1 border-dark rounded rounded-2'>{ new Date().getSeconds() }</h1>
                         <p className='text-capitalize'>seconds</p>
                     </div>
                 </div>

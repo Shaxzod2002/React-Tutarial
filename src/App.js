@@ -1,6 +1,6 @@
 import './App.css';
 import Components from './components';
-import 'bootstrap/dist/css/bootstrap.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   return (
