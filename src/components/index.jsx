@@ -3,7 +3,8 @@ import React from 'react'
 // import Lesson1 from './Lessons/Lesson1'
 // import Lesson2 from './Lessons/Lesson2'  
 // import Lesson3 from './Lessons/Lesson3'
-import Lesson4 from './Lessons/Lesson4'
+// import Lesson4 from './Lessons/Lesson4'
+import Lesson5 from './Lessons/Lesson5'
 
 export default function Components() {
     return (
@@ -12,7 +13,8 @@ export default function Components() {
             {/* <Lesson1 /> */}
             {/* <Lesson2 /> */}
             {/* <Lesson3 /> */}
-            <Lesson4  />
+            {/* <Lesson4 /> */}
+            <Lesson5 />
         </div>
     )
 }
